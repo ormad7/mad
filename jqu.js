@@ -15,13 +15,10 @@ alert('Clicked!');
 
 
 
+var array=[3,6,9];
 
 
 
-
-
-var veg=["banana","melon","apple"];
-var arr=[1,2,3];
 
 
 const delay = ms=>
