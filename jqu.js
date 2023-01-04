@@ -20,7 +20,7 @@ alert('Clicked!');
 
 
 
-var fruit=["banana","melon","apple"];
+var veg=["banana","melon","apple"];
 var arr=[1,2,3];
 
 
