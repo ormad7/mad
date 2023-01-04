@@ -13,7 +13,7 @@ alert('Clicked!');
 
 
 
-
+var array=[3,6,9];
 
 var array=[3,6,9];
 
