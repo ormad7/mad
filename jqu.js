@@ -21,8 +21,7 @@ alert('Clicked!');
 
 
 
-
-
+var arr=[1,2,3];
 
 
 const delay = ms=>
