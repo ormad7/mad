@@ -1,12 +1,78 @@
 
 
-document.querySelector('.input1').focus();
-document.write('<h1>madd<h1>');
 
-document.querySelector('button').onclick=
-function(){
-    alert('click');
-}
+ // nodejs
+
+    const http = require('http');
+    const fs = require('fs');
+    const port=8080;
+    http.createServer((request,response)=>{
+
+        response.writeHead(200,{'Content-Type':'text/json'});
+        
+        fs.readFile('todos.json',(err,Content)=>{
+            console.log(content);
+            response.write(content);
+            response.end();
+        });
+
+        response.end('Hello World\n');
+}).listen(port);
+
+console.log('Server running at http://127.0.0.1'+port);
+
+
+
+
+
+
+//nodejs
+
+
+
+
+
+
+
+//     function check(){
+//         console.log('madmoni');
+//     }
+
+//   setInterval(() => {
+//     check()
+//   }, 2000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.querySelector('.input1').focus();
+// document.write('<h1>madd<h1>');
+
+// document.querySelector('button').onclick=
+// function(){
+//     alert('click');
+// }
 
 
 
