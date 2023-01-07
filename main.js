@@ -1,12 +1,149 @@
 
+// const fs=require('fs').promises;
 
-document.querySelector('.input1').focus();
-document.write('<h1>madd<h1>');
+ // nodejs
 
-document.querySelector('button').onclick=
-function(){
-    alert('click');
-}
+ const express=require('express');
+ const app=express();
+
+ app.get('/todos',(req,res)=>{
+
+    res.get([
+        {
+            id:1,
+            title:'Throw garbage',
+            completed:false
+        },
+        {
+            id:2,
+            title:'Wash the house',
+            completed:false
+        }
+    ]);
+ });
+
+    app.get('/',(req,res)=>{
+    res.send('<a href ="http://www.google.com">Google</a>');
+    })
+
+    app.get('/check',(req,res)=>{
+        res.send('Hello madmoni !');
+        })
+
+    app.listen(8000,()=>{
+        console.log('Lisenting ...');
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const http = require('http');
+    // const fs = require('fs');
+    // const express =require('express');
+    // const port=8080;
+
+    // const app =express();
+
+    // app.get('/path',function(req,res){                   //same same the exsample after
+    //     res.send('Hello World');
+    // });
+
+    // app.listen(3000)
+
+
+
+
+
+
+
+
+
+
+
+//     http.createServer((request,response)=>{
+
+//         response.writeHead(200,{'Content-Type':'text/json'});
+        
+//         fs.readFile('todos.json',(err,Content)=>{
+//             console.log(content);
+//             response.write(content);
+//             response.end();
+//         });
+
+//         response.end('Hello World\n');
+// }).listen(port);
+
+// console.log('Server running at http://127.0.0.1'+port);
+
+
+
+
+
+
+//nodejs
+
+
+
+
+
+
+
+//     function check(){
+//         console.log('madmoni');
+//     }
+
+//   setInterval(() => {
+//     check()
+//   }, 2000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.querySelector('.input1').focus();
+// document.write('<h1>madd<h1>');
+
+// document.querySelector('button').onclick=
+// function(){
+//     alert('click');
+// }
 
 
 
